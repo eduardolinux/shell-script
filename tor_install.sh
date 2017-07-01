@@ -41,9 +41,8 @@ fi
 #
 # Install TOR
 #
-
-export PKG_PATH=http://ftp.openbsd.org/pub/OpenBSD/5.9/packages/amd64/
-echo `pkg_add tor-0.2.7.6.tgz`
+export PKG_PATH=http://ftp.usa.openbsd.org/pub/OpenBSD/`uname -r`/packages/`arch -s` 
+echo `pkg_add tor`
 
 #
 # Config LAN in em1
